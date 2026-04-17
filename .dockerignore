@@ -1,0 +1,16 @@
+.git
+.env
+.env.local
+.cache_ggshield
+.kiro
+vendor
+__debug_bin*
+*.exe
+*.test
+*.prof
+cover.out
+config/testdata
+README.md
+LICENSE
+Dockerfile
+.dockerignore

@@ -161,6 +161,27 @@ go build -o mcp-server .
 ./mcp-server
 ```
 
+## Running with Docker
+
+Build the image:
+
+```bash
+docker build -t go-mcp-postgres-server .
+```
+
+Run the container:
+
+```bash
+docker run --rm \
+  -e MCP_DB_HOST=your-db-host \
+  -e MCP_DB_PORT=5432 \
+  -e MCP_DB_USER=postgres \
+  -e MCP_DB_PASSWORD=changeme \
+  -e MCP_DB_NAME=mcp_db \
+  -p 5353:5353 \
+  go-mcp-postgres-server
+```
+
 ## License
 
 See [LICENSE](LICENSE) for details.
