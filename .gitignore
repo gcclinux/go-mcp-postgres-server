@@ -1,0 +1,29 @@
+# Environment secrets
+.env
+
+# Go build artifacts
+/go-mcp-postgres-server
+/mcp-server
+*.exe
+*.test
+
+# Vendor directory
+vendor/
+
+# Coverage and profiling
+cover.out
+*.prof
+
+# Debugger binaries (Delve)
+__debug_bin*
+
+# Test artifacts
+config/testdata/
+
+# Local environment overrides
+.env.local
+
+.kiro/*
+
+# ggshield cache
+.cache_ggshield
